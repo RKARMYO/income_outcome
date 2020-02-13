@@ -287,7 +287,7 @@
 							<input class="yearpicker form-control" id="searchyear" placeholder="ခုနှစ်ရွေးချယ်ပါ">
 						</div>
 						<div style="width: 33%;float: left;height: 40px;">
-							<button type="button" class="btn btn-rounded btn-amber searchbtn" style="margin-top: 0pt;"><i class="fas fa-search pr-2" aria-hidden="true"></i>ရှာမည်</button>
+							<button type="button" class="btn btn-rounded btn-amber searchbtn" style="margin-top: 0pt;"><i class="fas fa-search pr-2" aria-hidden="true"></i></button>
 						</div>
 
 						<div class="toappendsearch">
@@ -457,7 +457,7 @@
 				//$("#toappend").append('</table></center></div>');
 				for(i=0;i<data.length;i++)
 				{
-					$("#toappend").prepend('<div style="width: 100%;height: 45px;margin-top:7px;"><center><table class="mytable" cellspacing="0" width="100%" style="background-color: rgba(0,0,0,0.2);"><tr><th>ရက်စွဲ</th><th>ခေါင်းစဉ်</th><th>ပမာဏ</th><th>ဝင်ငွေစုစုပေါင်း</th></tr><tr><td>'+convertEngToMyanmar(data[i].date+'/'+data[i].newmonth+'/'+data[i].newyear)+'</td><td>'+data[i].title+'</td><td>'+convertEngToMyanmar(data[i].amount)+' ကျပ်</td><td>'+convertEngToMyanmar(data[i].totals)+' ကျပ်</td></tr></table></center></div>');
+					$("#toappend").prepend('<div style="width: 100%;height: auto;margin-top:7px;overflow-x:auto;"><center><table class="mytable" cellspacing="0" width="100%" style="background-color: rgba(0,0,0,0.2);"><tr><th>ရက်စွဲ</th><th>ခေါင်းစဉ်</th><th>ပမာဏ</th><th>ဝင်ငွေစုစုပေါင်း</th></tr><tr><td>'+convertEngToMyanmar(data[i].date+'/'+data[i].newmonth+'/'+data[i].newyear)+'</td><td>'+data[i].title+'</td><td>'+convertEngToMyanmar(data[i].amount)+' ကျပ်</td><td>'+convertEngToMyanmar(data[i].totals)+' ကျပ်</td></tr></table></center></div>');
 					//$("#toappend").prepend('<tr><td>'+convertEngToMyanmar(data[i].date+'/'+data[i].newmonth+'/'+data[i].newyear)+'</td><td>'+data[i].title+'</td><td>'+convertEngToMyanmar(data[i].amount)+' ကျပ်</td><td>'+convertEngToMyanmar(data[i].totals)+' ကျပ်</td></tr>');
 				}
 				//$("#toappend").prepend('<div style="width: 100%;height: 45px;margin-top:7px;"><center><table class="mytable" cellspacing="0" width="100%" style="background-color: rgba(0,0,0,0.2);"><tr><td>ရက်စွဲ</td><td>ခေါင်းစဉ်</td><td>ပမာဏ</td><td>ဝင်ငွေစုစုပေါင်း</td></tr>');
